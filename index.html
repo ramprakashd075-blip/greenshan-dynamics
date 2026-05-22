@@ -439,87 +439,147 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                              
-                               <!-- =========================
-                     STYLISH HERO H1 DESIGN
-                     Replace your current H1 with this
+                                        <!-- =========================
+                     HERO TITLE HTML
                 ========================= -->
                 
-                <h1 class="hero-title">
-                  <span class="gradient-text">Digital Marketing</span><br>
-                  <span class="italic-text">Agency in Chennai</span> —
-                  <br>
-                  <span class="highlight-text">
-                    Google Ads, Meta Ads & SEO
-                  </span>
-                  <br>
-                  <span class="roi-text">That Deliver Real ROI</span>
+                <h1 class="modern-hero-title">
+                    <span class="top-gradient">Digital Marketing</span>
+                
+                    <span class="italic-highlight">
+                        Agency in Chennai —
+                    </span>
+                
+                    <span class="service-line">
+                        Google Ads, Meta Ads & SEO
+                    </span>
+                
+                    <span class="bottom-roi">
+                        That Deliver Real ROI
+                    </span>
                 </h1>
                 
                 <!-- =========================
-                     ADD THIS CSS
-                     Paste inside your <style> tag
+                     HERO TITLE CSS
                 ========================= -->
                 
                 <style>
                 
-                .hero-title{
-                    font-size: 68px;
-                    line-height: 1.1;
-                    font-weight: 800;
-                    letter-spacing: -2px;
+                .modern-hero-title{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
                     font-family: 'Poppins', sans-serif;
-                    margin-bottom: 30px;
-                    color: #1f1f1f;
+                    max-width: 850px;
+                    line-height: 1.05;
+                    margin-bottom: 25px;
                 }
                 
-                /* Gradient Heading */
-                .gradient-text{
-                    background: linear-gradient(90deg, #4A90E2, #7B61FF);
+                /* First Line */
+                .top-gradient{
+                    font-size: 72px;
+                    font-weight: 800;
+                    letter-spacing: -3px;
+                
+                    background: linear-gradient(
+                        90deg,
+                        #2F80ED,
+                        #7B61FF
+                    );
+                
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                
                     display: inline-block;
                 }
                 
-                /* Stylish Italic */
-                .italic-text{
-                    font-style: italic;
-                    color: #ff5e57;
+                /* Second Line */
+                .italic-highlight{
+                    font-size: 66px;
                     font-weight: 700;
+                    font-style: italic;
+                    color: #ff5b4d;
+                    letter-spacing: -2px;
                 }
                 
-                /* Highlight Service Line */
-                .highlight-text{
-                    color: #222;
+                /* Third Line */
+                .service-line{
+                    font-size: 58px;
+                    font-weight: 800;
+                    color: #111827;
                     position: relative;
                     display: inline-block;
+                    width: fit-content;
+                    z-index: 1;
                 }
                 
-                .highlight-text::after{
+                .service-line::after{
                     content: "";
                     position: absolute;
                     left: 0;
                     bottom: 8px;
                     width: 100%;
                     height: 14px;
-                    background: rgba(255, 94, 87, 0.18);
+                    background: rgba(255, 91, 77, 0.18);
+                    border-radius: 30px;
                     z-index: -1;
-                    border-radius: 20px;
                 }
                 
-                /* ROI Line */
-                .roi-text{
-                    color: #4A90E2;
-                    text-shadow: 0px 4px 15px rgba(74,144,226,0.25);
+                /* Fourth Line */
+                .bottom-roi{
+                    font-size: 62px;
+                    font-weight: 800;
+                    color: #2F80ED;
+                
+                    text-shadow:
+                        0px 4px 12px rgba(47,128,237,0.25);
                 }
                 
-                /* Responsive */
+                /* =========================
+                   RESPONSIVE
+                ========================= */
+                
+                @media(max-width: 991px){
+                
+                .top-gradient{
+                    font-size: 54px;
+                }
+                
+                .italic-highlight{
+                    font-size: 48px;
+                }
+                
+                .service-line{
+                    font-size: 42px;
+                }
+                
+                .bottom-roi{
+                    font-size: 44px;
+                }
+                
+                }
+                
                 @media(max-width: 768px){
                 
-                .hero-title{
-                    font-size: 42px;
-                    line-height: 1.2;
+                .modern-hero-title{
+                    gap: 4px;
+                }
+                
+                .top-gradient{
+                    font-size: 40px;
                     letter-spacing: -1px;
+                }
+                
+                .italic-highlight{
+                    font-size: 34px;
+                }
+                
+                .service-line{
+                    font-size: 30px;
+                }
+                
+                .bottom-roi{
+                    font-size: 32px;
                 }
                 
                 }
